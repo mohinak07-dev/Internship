@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+    color:#111;
+}
+
+/* Navbar */
+.navbar{
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-circle{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#9333ea;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:20px;
+}
+
+.logo h2{
+    font-size:32px;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+}
+
+.active{
+    background:#9333ea;
+    color:white !important;
+    padding:12px 22px;
+    border-radius:8px;
+}
+
+.contact-btn{
+    background:#9333ea;
+    color:white;
+    padding:12px 28px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow:0 5px 12px rgba(147,51,234,.3);
+}
+
+/* Hero Section */
+.hero{
+    min-height:85vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 8%;
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:0;
+    width:45%;
+    height:100%;
+    background:linear-gradient(
+        135deg,
+        rgba(186,104,200,.25),
+        rgba(129,212,250,.25)
+    );
+    z-index:-1;
+}
+
+.hero-content{
+    width:50%;
+}
+
+.hero-content h1{
+    font-size:72px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero-content p{
+    font-size:22px;
+    color:#444;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.highlight{
+    color:#c45a5a;
+    text-decoration:underline;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#9333ea;
+    color:white;
+    padding:16px 35px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(147,51,234,.4);
+}
+
+/* Image Section */
+.hero-image{
+    width:42%;
+}
+
+.image-box{
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.image-box img{
+    width:100%;
+    display:block;
+}
+
+/* Stats */
+.stats{
+    display:flex;
+    gap:25px;
+    margin-top:80px;
+}
+
+.stat-card{
+    width:220px;
+    background:#eee6f8;
+    text-align:center;
+    padding:25px;
+}
+
+.stat-card h3{
+    font-size:42px;
+    color:#2c3345;
+}
+
+.stat-card p{
+    margin-top:8px;
+    color:#666;
+}
+
+/* Responsive */
+@media(max-width:1000px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content,
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .nav-links{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-circle">B</div>
+        <h2>Brooklyn</h2>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Process</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+
+    <a href="#" class="contact-btn">Contact</a>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+        <h1>Hello, I'm<br>Brooklyn Gilbert</h1>
+
+        <p>
+            I'm a Freelance
+            <span class="highlight">UI/UX Designer</span>
+            and
+            <span class="highlight">Developer</span>
+            based in London, England. I strive to build
+            immersive and beautiful web applications through
+            carefully crafted code and user-centric design.
+        </p>
+
+        <a href="#" class="btn">Say Hello!</a>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>15 Y.</h3>
+                <p>Experience</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>250+</h3>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>58</h3>
+                <p>Happy Clients</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43?w=900"
+                 alt="Profile">
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
