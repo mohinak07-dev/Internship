@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "Blink led",
+			"path": "../../Blink led"
+		},
+		{
+			"name": "DR_GPIO",
+			"path": "../../Day_8/DR_GPIO"
+		},
+		{
+			"name": "ISR_timer",
+			"path": "../../Day_8/ISR_timer"
+		},
+		{
+			"name": "Dual_Core_eg",
+			"path": "../../Day_8/Dual_Core_eg"
+		},
+		{
+			"name": "ledweb",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
